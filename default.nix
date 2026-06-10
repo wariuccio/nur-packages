@@ -21,6 +21,7 @@
   # flakeModules = { }; # flake-parts modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  dir2opds = pkgs.callPackage ./pkgs/dir2opds { };
   systemd-udp-proxy = pkgs.callPackage ./pkgs/systemd-udp-proxy { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
